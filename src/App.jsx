@@ -10,6 +10,9 @@ import Influencers from './components/Influencers';
 import Youtubers from './components/Youtubers';
 import Card from './components/Card';
 
+
+
+
 function App() {
   const [activeTab, setActiveTab] = useState('Tab 1');
 
@@ -44,7 +47,7 @@ function App() {
 
   return (
     <>
-      <h1>Copa do Mundo Feminina 2023</h1>
+      <h1>FAMOSO</h1>
       
       <section className='knockout_table'>
         

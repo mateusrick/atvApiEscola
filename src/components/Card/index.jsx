@@ -16,7 +16,7 @@ function Card() {
 
     return (
         grupos.map( grupo => 
-            <section className={styles.card} key={grupo.grupo}>
+            <section className={styles.card} key={grupo.grupo} style={{'backgroundColor': grupo.cor}}>
                 <div className={styles.linha} style={{'backgroundColor': grupo.cor}}></div>
                 <h2> {grupo.grupo}</h2>
                 <ul>
@@ -24,7 +24,7 @@ function Card() {
                         grupo.famosos.map( famoso => {
                           return (
                             <li key={famoso.nome}>
-                                <img  className={styles.imagem} src={`/bandeiras/${famoso.imagem}.png`} alt={famoso.selecao} />
+                                <img  className={styles.imagem} src={`/famosos/${famoso.imagem}.jpg`} alt={famoso.grupo} />
                                 {famoso.nome} 
                             </li>
                             ) 
